@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(primarySwatch: Colors.yellow),
         home: Scaffold(
-            body: Center(
-          child: Text("Hello Flutter"),
-        )));
+            appBar: AppBar(title: const Text("Hello Flutter")),
+            body: const Center(
+              child: Text("Hello Flutter"),
+            )));
   }
 }
 
